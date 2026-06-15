@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اخبار باشگاه‌ها | آخرین تحولات تیم‌ها</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&amp;display=swap');
+    
+    body {
+        font-family: 'Vazirmatn', sans-serif;
+        background-color: #f8fafc;
+    }
+    
+    .news-card {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .news-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
+    }
+    
+    .section-title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        letter-spacing: -1.5px;
+    }
+    
+    .news-paragraph {
+        font-size: 1.05rem;
+        line-height: 1.9;
+        color: #475569;
+    }
+    
+    .club-badge {
+        font-size: 0.75rem;
+        padding: 3px 12px;
+        border-radius: 9999px;
+        font-weight: 600;
+    }
+    
+    .featured-news {
+        background: linear-gradient(135deg, #1e3a8a, #1e40af);
+        color: white;
+    }
+    
+    .nav-light {
+        background: white;
+        border-bottom: 1px solid #e2e8f0;
+    }
+</style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Navbar -->
+    <nav class="nav-light sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-11 h-11 bg-blue-700 rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-newspaper text-white text-3xl"></i>
+                    </div>
+                    <span class="font-bold text-3xl tracking-tighter">اخبار باشگاه‌ها</span>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    [پرسپولیس](#perspolis)
+                    [استقلال](#esteghlal)
+                    [سپاهان](#sepahan)
+                    [تیم ملی](#national)
+                </div>
+                
+                <div>
+                    <button class="px-6 py-3 bg-blue-700 hover:bg-blue-800 transition-colors text-white text-sm font-medium rounded-2xl flex items-center gap-x-2">
+                        <i class="fa-solid fa-search"></i>
+                        <span>جستجو</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="max-w-screen-2xl mx-auto px-8 pt-12 pb-10">
+        <div class="max-w-3xl">
+            <div class="inline-flex items-center gap-x-2 bg-blue-100 text-blue-700 px-4 py-1.5 rounded-3xl text-sm font-medium mb-6">
+                <i class="fa-solid fa-clock"></i>
+                <span>به‌روز شده • همین الان</span>
+            </div>
+            <h1 class="section-title text-slate-900 mb-4">آخرین اخبار باشگاه‌ها</h1>
+            <p class="text-xl text-slate-600">تحولات، نقل و انتقالات، مصاحبه‌ها و گزارش‌های اختصاصی از باشگاه‌های ایرانی و خارجی</p>
+        </div>
+    </div>
+
+    <!-- Featured News -->
+    <div class="max-w-screen-2xl mx-auto px-8 pb-12">
+        <div class="featured-news rounded-3xl p-10 text-white">
+            <div class="max-w-2xl">
+                <span class="club-badge bg-white/20">ویژه</span>
+                <h2 class="text-4xl font-bold mt-4 mb-4 leading-tight">پرسپولیس در آستانه جذب دو بازیکن جدید</h2>
+				<img 
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv435uBCM2u5koWLB_xR2oZbibDM3iOr6jdRszsnlXDw&s=10" 
+  alt="تحلیل فرم تیم‌های اروپایی" 
+  style="width: 100%; max-width: 850px; height: 320px; object-fit: cover; display: block; margin: 24px auto; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.3);"
+>
+                <p class="text-blue-100 text-lg">مدیرعامل باشگاه پرسپولیس از نهایی شدن قرارداد دو بازیکن خارجی خبر داد. این دو بازیکن در پست‌های دفاع و هافبک به تیم اضافه خواهند شد.</p>
+                <div class="mt-6 flex items-center gap-x-3 text-sm">
+                    <span>۱۵ بهمن ۱۴۰۳</span>
+                    <span class="w-1 h-1 bg-white/40 rounded-full"></span>
+                    <span>گزارش اختصاصی</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main News Content -->
+    <div class="max-w-screen-2xl mx-auto px-8 pb-16">
+        <div class="grid lg:grid-cols-3 gap-6">
+            
+            <!-- News Cards -->
+            <div class="lg:col-span-2 space-y-6">
+                
+                <!-- Card 1 -->
+                <div class="news-card bg-white border border-slate-200 rounded-3xl p-7">
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <span class="club-badge bg-red-100 text-red-700">پرسپولیس</span>
+                        <span class="text-xs text-slate-400">۱۴ بهمن</span>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-3">تمرینات پرسپولیس با حضور بازیکنان جدید</h3>
+                    <p class="news-paragraph">تیم پرسپولیس امروز تمرینات خود را در حالی آغاز کرد که دو بازیکن جدید در تمرینات حضور داشتند. سرمربی تیم از عملکرد این بازیکنان ابراز رضایت کرد و اعلام نمود که به زودی در ترکیب اصلی قرار خواهند گرفت.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="news-card bg-white border border-slate-200 rounded-3xl p-7">
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <span class="club-badge bg-blue-100 text-blue-700">استقلال</span>
+                        <span class="text-xs text-slate-400">۱۳ بهمن</span>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-3">استقلال در حال مذاکره با مربی خارجی</h3>
+                    <p class="news-paragraph">باشگاه استقلال مذاکرات خود را با یک مربی پرتغالی برای فصل آینده آغاز کرده است. این مربی سابقه کار در چندین باشگاه اروپایی را دارد و در صورت توافق، از تابستان به استقلال ملحق خواهد شد.</p>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="space-y-6">
+                <div class="news-card bg-white border border-slate-200 rounded-3xl p-7">
+                    <span class="club-badge bg-yellow-100 text-yellow-700">سپاهان</span>
+                    <h4 class="font-bold text-xl mt-3 mb-2">سپاهان به دنبال جذب مهاجم برزیلی</h4>
+                    <p class="text-sm text-slate-600">باشگاه سپاهان در حال رایزنی برای جذب یک مهاجم برزیلی است که در حال حاضر در لیگ پرتغال بازی می‌کند.</p>
+                </div>
+                
+                <div class="news-card bg-white border border-slate-200 rounded-3xl p-7">
+                    <span class="club-badge bg-green-100 text-green-700">تیم ملی</span>
+                    <h4 class="font-bold text-xl mt-3 mb-2">دعوت از ۳ بازیکن جدید به اردوی تیم ملی</h4>
+                    <p class="text-sm text-slate-600">فدراسیون فوتبال نام سه بازیکن جوان را به لیست دعوت‌شدگان به اردوی تیم ملی اضافه کرد.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Long Content Section -->
+    <div class="max-w-screen-2xl mx-auto px-8 py-12 bg-white border-t border-slate-100">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="section-title text-slate-900 mb-8">اخبار باشگاه‌ها در هفته اخیر</h2>
+            
+            <div class="space-y-8">
+                <div>
+                    <h3 class="font-semibold text-2xl mb-4 text-slate-900">پرسپولیس و تحولات نقل و انتقالات</h3>
+                    <p class="news-paragraph">باشگاه پرسپولیس در هفته‌های اخیر فعالیت گسترده‌ای در بازار نقل و انتقالات داشته است. علاوه بر جذب دو بازیکن خارجی، این باشگاه در حال بررسی چندین گزینه داخلی نیز هست. مدیرعامل باشگاه اعلام کرد که اولویت اصلی، تقویت خط دفاعی و میانی است. همچنین مذاکرات با چند بازیکن جوان لیگ برتری برای تقویت عمق تیم ادامه دارد. هواداران پرسپولیس انتظار دارند که در نیم‌فصل دوم تیم با قدرت بیشتری ظاهر شود و برای قهرمانی بجنگد. در همین راستا، کادر فنی جلسات متعددی با بازیکنان فعلی برگزار کرده تا سطح آمادگی تیم را افزایش دهد.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-2xl mb-4 text-slate-900">استقلال و برنامه‌ریزی برای فصل آینده</h3>
+                    <p class="news-paragraph">باشگاه استقلال با هدف بازگشت به دوران اوج، برنامه‌ریزی جدی برای فصل آینده انجام داده است. مذاکره با مربی خارجی یکی از مهم‌ترین اقدامات مدیریت جدید باشگاه است. علاوه بر این، استقلال در حال بررسی چند بازیکن کلیدی از لیگ‌های خارجی است تا بتواند در فصل بعد رقابت جدی‌تری با مدعیان داشته باشد. هواداران استقلال نیز با انتشار بیانیه‌هایی از مدیریت خواسته‌اند که هرچه سریع‌تر تکلیف مربی و بازیکنان را مشخص کند. در حال حاضر، تمرینات تیم با شدت بیشتری دنبال می‌شود و بازیکنان مصدوم در حال بازگشت به میادین هستند.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-2xl mb-4 text-slate-900">سایر باشگاه‌ها و اخبار مهم</h3>
+                    <p class="news-paragraph">در سایر باشگاه‌های لیگ برتری نیز اخبار مهمی در جریان است. سپاهان اصفهان به دنبال تقویت خط حمله خود است و مذاکرات جدی با چند مهاجم خارجی انجام داده. تراکتور تبریز نیز قصد دارد چند بازیکن جوان را به خدمت بگیرد. در سطح ملی، فدراسیون فوتبال برنامه‌های جدیدی برای تیم ملی اعلام کرده که شامل برگزاری اردوهای تدارکاتی و بازی‌های دوستانه است. تمام این اخبار به صورت لحظه‌ای در این بخش به‌روزرسانی می‌شود تا علاقه‌مندان بتوانند از آخرین تحولات باشگاه‌های مورد علاقه خود مطلع شوند.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-400">
+        <p>© ۱۴۰۳ اخبار باشگاه‌ها — تمام حقوق محفوظ است</p>
+    </footer>
+
+</body>
+</html>
